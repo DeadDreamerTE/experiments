@@ -1,0 +1,111 @@
+
+.form {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    right: 0;
+    width: 52ch;
+    gap: 8px;
+    background-color:hsla(215, 67%, 12%, 0.521) ;
+    border: 2px solid rgb(10, 197, 172);
+    border-radius: 50px;
+    margin-top: 8px;
+    margin-right: 8px;
+    height:80%;
+    padding: 75px;
+    font-size: 20px;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.input label {
+    text-align: left;
+}
+
+.input input {
+    padding: 4px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.checkbox input{
+    margin-top: 8px;
+}
+
+.checkboxtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.passwordIndicator {
+    display: flex;
+    background: rgb(0, 0, 0);
+    height: 25px;
+    margin: 4px 0;
+    border-radius: 4px;
+
+    position: relative;
+}
+
+.passwordIndicator .number {
+    display: none;
+}
+
+.passwordIndicator .bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+
+    transform-origin: left;
+    transition: 300ms transform ease-in-out,
+        300ms background-color ease-in-out;
+
+    transform: scaleX(0);
+}
+
+.passwordIndicator .bar.zero {
+    background-color: #DD1C1A;
+    transform: scaleX(0);
+}
+
+.passwordIndicator .bar.one {
+    background-color: #DD1C1A;
+    transform: scaleX(0.25);
+}
+
+.passwordIndicator .bar.two {
+    background-color: #E77211;
+    transform: scaleX(0.5);
+}
+
+.passwordIndicator .bar.three {
+    background-color: #F0C808;
+    transform: scaleX(0.75);
+}
+
+.passwordIndicator .bar.four {
+    background-color: #08A045;
+    transform: scaleX(1);
+}
+.error{
+    color: rgb(255, 62, 62);
+}

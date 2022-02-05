@@ -1,0 +1,201 @@
+  /* global*/
+  body{
+    display: flex;
+      flex-direction:row;
+      justify-content:start;
+      background-image: url("/public/images/fundo.png");
+      color:white;
+  }
+  
+  /*DragDrop*/
+  .navios {
+      display: flex;
+      flex-direction:row;
+      justify-content:space-between;
+      align-items: center;
+      padding: 10px;
+      
+    }
+
+  .navios td {
+    width: 48px;
+    height: 48px;
+  }
+
+  .items{
+    display: flex;
+      flex-direction:row;
+      justify-content:center;
+      align-items: center;
+      font-size: 50px;
+  }
+  .items span{
+    margin-bottom: 20px;
+  }
+
+  .controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  .controls button{
+    background-color:rgba(0, 123, 161, 0.603);
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    height: 80px;
+    width:125px;
+    color: white;
+    font-size: 30px;
+  }
+  
+
+  .RollButton{
+    border-radius: 100%;
+    border:none;
+    box-shadow: 0px 0px 2px 2px grey;
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .RollButton img{
+    width:45px;
+    height: 45px;
+  }
+
+  .Path{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 40px; 
+  }
+  .Path input{
+    height:50px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 17, 53, 0.425);
+    color: white;
+    font-size: 30px;
+  }
+  .Path button{
+    height: 50px; 
+    margin-left: 5px ;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 123, 161, 0.603);
+    color: white;
+    font-size: 20px;
+  }
+  .Path button:disabled{
+    height: 50px; 
+    margin-left: 5px ;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 123, 161, 0.3);
+    color: rgba(255, 255, 255, 0.342);
+    font-size: 20px;
+  }
+  
+  .Tabuleiro{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: cadetblue;
+    }
+
+      .Tabuleiro td {
+        width: 55px;
+        height: 55px;
+      }
+      .Tabuleiro th {
+        width: 55px;
+        height: 55px;
+      }
+
+  /*DragDrop*/
+
+
+  .Jogo{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width:100vw;
+    margin-top: 10vh;
+  }
+  
+  .Jogo p{
+    text-align: center
+  }
+
+  .chat{
+    position: absolute; 
+    right: 0%;
+    top: 0%;
+    width: 14%;
+    max-height: 100vh; 
+    overflow-y: scroll;
+  }
+  
+    
+  .TabuleiroB {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .TabuleiroR {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .TabuleiroB td {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(37, 93, 248);
+  }
+  
+  .TabuleiroR td {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(248, 47, 47);
+  }
+
+/*login*/
+.Container3{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10%;
+  margin-bottom:10%;
+  margin-right: 40px;
+  width: 30%;
+  height:35%;
+  right: 0;
+  padding: 75px;
+  font-size: 20px;
+  background-color:#0A1B33 ;
+  border: 2px solid rgb(10, 197, 172);
+  border-radius: 50px;
+  opacity: 0.6;
+}
+
+.Container3 div{
+padding-bottom: 10px;
+}
+
+/*login*/
+.quadrado{
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+}
